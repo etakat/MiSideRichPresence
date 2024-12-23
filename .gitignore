@@ -1,0 +1,53 @@
+﻿# IDE-specific files
+.idea/
+.vscode/
+*.suo
+*.user
+*.editorconfig
+*.xsd
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+
+# Visual Studio auto-generated files
+.vs/
+*.log
+*.tlog
+*.sdf
+*.VC.db
+
+# Temporary and cache files
+*.tmp
+*.cachefile
+
+# Debug and release folders
+[Dd]ebug*/
+[Rr]elease*/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# Coverage and test results
+*.coverage
+*.coveragexml
+[Tt]est[Rr]esult*/
+*.VisualState.xml
+TestResult.xml
+
+# Local History
+.localhistory/
+.history/
+
+# Rider/JetBrains files
+*.sln.iml
+_ReSharper*/
+*.DotSettings.user
