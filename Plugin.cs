@@ -62,6 +62,7 @@ namespace MiSideRichPresence
 
                 _client.OnClose += (sender, e) =>
                 {
+                    _client.ClearPresence();
                     Thread.Sleep(2500);
                 };
 
@@ -71,6 +72,7 @@ namespace MiSideRichPresence
                 };
 
                 _client.Initialize();
+                _client.ClearPresence();
                 
                 if(!_presence.HasTimestamps())
                 {
@@ -79,7 +81,6 @@ namespace MiSideRichPresence
             }
             catch (Exception ex)
             {
-                _client = null;
                 Log.LogError($"Failed to initialize Discord RPC: {ex}");
                 Unload();
             }
@@ -89,6 +90,7 @@ namespace MiSideRichPresence
         {
             if (_client != null)
             {
+                _client.ClearPresence();
                 _client.Dispose();
                 _client = null;
             }
